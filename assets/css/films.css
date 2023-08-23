@@ -70,6 +70,7 @@ nav .recherche button {
  .recherche{
     display: flex;
     align-items: flex-end;
+    
  }
  .user img{
     margin-right: 0px;
