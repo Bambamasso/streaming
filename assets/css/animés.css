@@ -3,6 +3,7 @@
 body{margin: 0 ;
     padding: 0;
     margin: 0 auto;
+    background: black;
  
 }
 
@@ -132,10 +133,6 @@ nav .recherche button {
 
     }
 
-
-
-   
-
 }
 /* fin responsive */
 /* fin de la  barre de navigation */
@@ -170,15 +167,22 @@ nav .recherche button {
 
 .animes{
     position: relative;
-    border: 1px solid red;
     display: grid;
-    top: 8rem;
+    top: 10rem;
     grid-gap: 1rem;
     grid-template-columns: 100%;
+    border: 1px solid red;
+}
+.animes h1{
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: -20px;
 }
 
 .galerie-animes{
-    background: black;
+    
 }
 .categories{
     display: flex;
@@ -187,7 +191,7 @@ nav .recherche button {
     width: 100%;
     max-width: 1700px;
     margin: 20px  auto;
-    border: 1px solid  green;
+   
 }
 
 .ligne{
@@ -224,19 +228,25 @@ footer{
     top: 8rem;
     width: 100%;
     margin: 0 auto;
+    background: rgb(46, 45, 45);
+    border-top: 1px solid #d9d9d9;
+    padding: 5px 15px;
    
     
 }
 .footer{
-    border: 2px solid rgb(255, 0, 204);
+   
     display: flex;
     justify-content: center; 
+    align-items: center;
     flex-wrap: wrap;
-    max-width: 80%;
+    max-width: 55rem;
+    margin: 0 auto;
+    margin-top: 20px;
 }
 
 .navigation{
-    border:4px solid rgb(241, 255, 47); 
+    
     margin-right: 20rem;
 }
 .navigation p{
@@ -256,21 +266,35 @@ footer{
 text-decoration: none;
 color: rgba(225, 225, 225, 0.63);
 }
-.adresses{
-   
+.adresses p{
+   font-size: 18px;
+   font-family:'Inter', sans-serif ;
+   text-align: center;
+   text-decoration:underline;
+   color: rgba(225, 225, 225, 0.63);
 }
-.adrs{
-    margin-top: 20px;
-   
+span{
+    margin-left:10px;
+    margin-top: 8px;
+    color: rgba(225, 225, 225, 0.63);
+}
+.sociaux{
+    margin-top: 50px;   
+}
+.sociaux p{
+    text-align: center;
+    margin-top: 10px;
+    color: rgba(225, 225, 225, 0.63);
+    font-family:'Inter', sans-serif ;
+}
+.soc{
+    display: inline;
+    margin-left: 20px;
 }
 
 .adresse{
-      width: 30px;
-      height: 30px;
-      border-radius: 80px;
-      background: pink;
       margin-top: 10px;
-      display: flex;
-      justify-content: center;
+      display: flex;   
 }
+
 

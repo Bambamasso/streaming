@@ -207,8 +207,11 @@ nav .recherche button {
     /* height: 250px; */
     background-color: blue;
     overflow: hidden;
-    flex-shrink: 0;
-   
+    transition: transform 0.25;  
+}
+ 
+.ligne img:hover{
+transform: scale(1.24);
 }
 
 .ligne img{
@@ -225,3 +228,79 @@ nav .recherche button {
 /* fin section film */
 
 /* debut footer */
+footer{
+    
+    position: relative;
+    top: 8rem;
+    width: 100%;
+    margin: 0 auto;
+    background: rgb(46, 45, 45);
+    border-top: 1px solid #d9d9d9;
+    padding: 5px 15px;
+   
+    
+}
+.footer{
+   
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 55rem;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.navigation{
+    
+    margin-right: 20rem;
+}
+.navigation p{
+  text-align: center;
+  font-size: 25px;
+  font-family: 'Jacques Francois Shadow', cursive;
+  color: #c07503;
+  padding-bottom: 2rem;
+  margin-top: 8px;
+}
+.nav-footer ul li{
+ display: inline;
+ margin-left: 2rem;
+ border-right: 1px solid ;
+}
+.nav-footer ul li a{
+text-decoration: none;
+color: rgba(225, 225, 225, 0.63);
+}
+.adresses p{
+   font-size: 18px;
+   font-family:'Inter', sans-serif ;
+   text-align: center;
+   text-decoration:underline;
+   color: rgba(225, 225, 225, 0.63);
+}
+span{
+    margin-left:10px;
+    margin-top: 8px;
+    color: rgba(225, 225, 225, 0.63);
+}
+.sociaux{
+    margin-top: 50px;   
+}
+.sociaux p{
+    text-align: center;
+    margin-top: 10px;
+    color: rgba(225, 225, 225, 0.63);
+    font-family:'Inter', sans-serif ;
+}
+.soc{
+    display: inline;
+    margin-left: 20px;
+}
+
+.adresse{
+      margin-top: 10px;
+      display: flex;   
+}
+
+
