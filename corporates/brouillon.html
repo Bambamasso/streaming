@@ -5,190 +5,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Animés</title>
     <link rel="stylesheet" href="../assets/css/brouillon.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
      <!-- barre de navigation -->
    
     <div class="nav">
         <nav> 
-            <p><img src="../image/Capture_d_écran_2023-08-24_à_16.05.55-removebg-preview.png " width="150px" alt="" style="color: orange;"></p>
-            <div class="onglets">
-                <ul>
-                    <li><a href="">Accueil</a></li>
-                    <li><a href="">Films</a></li>
-                    <li><a href="">Séries</a></li>
-                    <li><a href="">Animés</a></li>
-                    <li><input type="search" class="search"></li>
-                    <li><img src="../image/user.png" alt=""></li>
-                    <li><a href="">Deconnexion</a></li>
-                </ul>
-            </div>
+           
+            <p><img src="../image/logo.png" width="150px" alt="" style="color: orange;"></p>
+            <div class="barre-recherche"> <input type="search" class="search"></div>
+           <div class="onglets">
 
-            <img src="../image/menu.svg" alt="" class="burgur">
+            <input type="checkbox" id="check">
+            <label for="check" class="logo"><img src="../image/menu.svg" alt=""></label>
+
+            <ul>
+                <li><a href="" id="a">Accueil</a></li>
+                <li><a href="" id="a">Films</a></li>
+                <li><a href="" id="a">Séries</a></li>
+                <li><a href="" id="a">Animés</a></li>
+                <li><a href="" id="a"><img src="../image/user.png" alt=""></a></li>
+                <li><button><a href="">Deconnexion</a></button></li>
+
+            </ul>
+         
+        
         </nav>
     
     </div>
  
  
-<!-- fin de la barre de navigation -->
 
 
-  <!-- section films -->
-    
-  <section class="animes">
-
-      <div class="galerie-animes">
-          <p class="p">Animés d'avanture</p>
-          <div class="categories">
-              <div class="ligne"><img src="../image/l'age de glace.webp" alt="image">
-                  <div class="description">
-                      <p>L'AGE DE GLACE</p>
-                  </div>
-              </div>
-              <div class="ligne"><img src="../image/raya_et_le_dernier_dragon.jpeg" alt="image">
-                  <div class="description">
-                      <p>RAYA ET LE DERNIER DRAGON</p>
-                  </div>
-              </div>
-              <div class="ligne"><img src="../image/HTTYD2_Theatrical_Poster.webp" alt="image">
-                  <div class="description">
-                      <p>DRAGON 2</p>
-                  </div>
-              </div>
-              <div class="ligne"><img src="../image/ralfph.jpeg" alt="image">
-                  <div class="description">
-                      <p>RALFPH</p>
-                  </div>
-              </div>
-              
-          </div>
-      </div>
+    <section>
+        <div class="contenus">
+           <div class="banniere"> </div>
   
-  
-    <div class="galerie-animes">
-       <p class="p">Animés de pyschologie</p>
-        
-       <div class="categories">
-          <div class="ligne"><img src="../image/death note.jpeg" alt="image">
-              <div class="description">
-                  <p>LE DEATH NOTE</p>
-              </div>
-          </div>
-          <div class="ligne"><img src="../image/tokyo.jpeg" alt="image">
-              <div class="description">
-                  <p>TOKYO</p>
-              </div>
-          </div>
-          <div class="ligne"><img src="../image/parasyte-scaled.webp" alt="image">
-              <div class="description">
-                  <p>PARASYTE</p>
-              </div>
-          </div>
-          <div class="ligne"><img src="../image/main-qimg-1069a00735a9e471a8bf523751a8daed-lq.jpeg" alt="image">
-              <div class="description">
-                  <p>MONSTER</p>
-              </div>
-          </div>
+            <div class="text">
+               <p>Decouvrze nos meilleur films et séries ainsi que des <br>animés en streaming sur OSAM </p>
+            </div>
            
-       </div>
-  
-      </div>
-  
-  
-  
-      <div class="galerie-animes">
-          <p class="p">Animés sport</p>
-            
-          <div class="categories">
-              <div class="ligne"><img src="../image/Kuroko-no-Basket.jpeg" alt="image">
-                  <div class="description">
-                      <p>KUROKO BASKET</p>
-                  </div>
-              </div>
-              <div class="ligne"><img src="../image/capitaine tsubsa.jpeg" alt="image">
-                  <div class="description">
-                      <p>CAPITAINE TSUBSA</p>
-                  </div>
-              </div>
-              <div class="ligne"><img src="../image/hoshiai no sora.jpeg" alt="image">
-                  <div class="description">
-                      <p>HOSHIAI NO SORA</p>
-                  </div>
-              </div>
-                  <div class="ligne"><img src="../image/Tamayomi.jpeg" alt="image">
-                  <div class="description">
-                      <p>TAMAYOMI</p>
-                  </div>
-              </div>
-              
-          </div>
-   
-      </div>
-  
-  
-      <div class="galerie-animes">
-          <p class="p">Animés de magie</p>
-            
-          <div class="categories">
-              <div class="ligne"><img src="../image/Encanto-extra-15513.jpeg" alt="image">
-                  <div class="description">
-                      <p>ENCANTO</p>
-                  </div>
-              </div>
-              <div class="ligne"><img src="../image/le-manoir-magique-a.webp" alt="image">
-                  <div class="description">
-                      <p>LE MANOIR MAGIQUE</p>
-                  </div>
-              </div>
-              <div class="ligne"><img src="../image/black_clover_mahou_mikado_no_ken_10196.webp" alt="image">
-                  <div class="description">
-                      <p>BLACK CLOVER</p>
-                  </div>
-              </div>
-              <div class="ligne"><img src="../image/the-academy-of-magic-2020-i-movie-poster.jpeg" alt="image">
-                  <div class="description">
-                      <p>ACADEMIE DE MAGIE</p>
-                  </div>
-              </div>
           
+          <div class="annonces">
+            <h1>NOUVEAUTE</h1>
+            <div class="nouveauté">
+              <div class="nouv"><a href="./sirène.html"><img src="../image/LaPetiteSirene-2023-affiche-19961-thumb.jpeg" height="" alt="image"  ></a>
+                <div class="description"><p>ssfrftgrfttfg</p></div> </div>
+              <div class="nouv"><a href="./element.html"><img src="../image/5709179.webp" alt="image" ></a> 
+                <div class="description"><p>ssfrftgrfttfg</p></div> 
+              </div>
+              <div class="nouv"><a href="./miraculous.html"><img src="../image/1583867.webp"  alt="image"></a>  
+                <div class="description"><p>ssfrftgrfttfg</p></div>
+              </div>
+              <div class="nouv"><a href="./fax.html"><img src="../image/5129031.webp" alt="image" ></a>  
+                <div class="description"><p>ssfrftgrfttfg</p></div>
+              </div>
+            </div>
           </div>
-   
-       </div>
-   
-   
+        </div>
   
-  </section>
   
-  <!-- fin section films -->
-
-  <!-- début section -->
- 
-  <footer> 
-      <div class="footer">
-           <div class="navigation">
-              <p>OSAM</p>
+      </section>
+     
+  
+  
+      <!--fin du  corps de la page  -->
       
-             <div class="nav-footer">
-                 <ul>
-                      <li><a href="">Accueil</a></li>
-                      <li><a href="">Films</a></li>
-                      <li><a href="">Séries</a></li>
-                      <li><a href="">Animés</a></li>
-                  </ul>
-                </div>
+      <!--début  pied de page -->
+      <footer> 
+        <div class="footer">
+          <div class="navigation">
+             <p>OSAM</p>
+            <div class="nav-footer">
+              <ul>
+                  <li><a href="">Accueil</a></li>
+                  <li><a href="">Films</a></li>
+                  <li><a href="">Séries</a></li>
+                  <li><a href="">Animés</a></li>
+                </ul>
             </div>
-            <div class="adresses">
-                <div class="adresse"><img src="../image/call.png" alt="" width="25px"></div> 
-                <div class="adresse"><img src="../image/mail.png" width="25px" alt=""></div>
+         </div>
+          <div class="adresses">
+            <p>Adresse</p>
+            <div class="adresse"><img src="../image/call.png" alt="" width="25px" ><span>05-54-21-99-29</span></div> 
+            <div class="adresse"><img src="../image/mail.png" width="25px" alt=""><span>osam51@gmail.com</span></div>
+          </div>
+          
+          <div class="sociaux">
+           <div class="soc"><img src="../image/twitter.png" alt=""></div>
+            <div class="soc"><img src="../image/facebook.png" alt=""></div>
+            <p> Company name 2023</p>
+          </div>
                
-            </div>
-            <div class="adrs">
-                <div>srt</div>
-                <div>vb</div>
-
-            </div>
-      </div>
-      <p></p>
-    </footer>
+  
+        </div>
+     
+      
+      </footer>
+      
+   
+  
+     <!--fin  pied de page -->
 </body>
 </html>

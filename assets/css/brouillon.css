@@ -18,11 +18,11 @@ body{margin: 0 ;
 
 /* barre de navigation */
 nav{
-    background: black;
+    background:blue;
    display: flex;
    width: 100%;
    position: fixed; 
-   justify-content: space-around;
+   justify-content: space-between;
    align-items: center;
    height: 80px;
    z-index: 1;
@@ -37,170 +37,185 @@ nav p{
 
 
 
-
-
-.onglets ul li{
-    display: inline;
+ nav .onglets ul li{
+    display: inline-block;
     color: rgba(255, 255, 255, 0.76);
-   
-    border: 1px solid red;
-    margin-left: 20px;
-    padding: 5px;
-
+    margin:0 10px;
+    line-height: 80px;
+    
+    }
+    .onglets nav ul{
+        margin-right: 60px;
     }
 
-
-    a{
+    ul li #a{
+        font-size: 18px;
+       
+     }
+     
+    #a{
         text-decoration: none;
         color: white;
     }
     
-    .onglets a:hover{
+     a:hover{
         color: rgba(255, 255, 255, 0.76);
     }
 
 
- 
-
-.burgur{
+.logo img{
     display: none;
+    cursor: pointer; 
+   
+}
+#check{
+    display:none ;
 }
 
- ul li a{
-    font-size: 18px;
- }
- 
+
 
 /* responsivité */
 
-@media screen and (max-width:829px){
-    nav {
-      
+@media screen and (max-width:1107px){
+   
+    .logo img{
+        display: block;
     }
-
-
-
-    ul  { position: fixed;
+ 
+   .onglets ul  { position: fixed;
         width: 100%;
+       background: rgb(217, 126, 14);
         height: 100vh;
-        background-color: aqua;
         top: 80px;
-        left: -100%;
-        transition: all .5s;
-        text-align: center;
-
+        text-align: right;
+        left: 100%;
+        transition: all .5s ; 
+    }
+    nav .onglets ul li{
+        display: block;
         
     }
 
-    
-    nav ul li{
-      display: block;
-      margin-top: 20px;
-      margin: 50px 0;
-      line-height: 30px;
+    #check:checked ~ ul{
+        left: 0;
+       
     }
-
-    a:hover,a.active{
-        background: rgb(157, 156, 156);
-        transition: .5s;
-
-    }
-    
-    .burgur{display: block;
-
-    }
-
-
-
-   
-
 }
 /* fin responsive */
-/* fin de la  barre de navigation */
 
+/* fin de la  barre de navigation */
 
 /* début section films */
 
+section{
+    position: relative;
+    top: 4rem;
+    width: 90%;
+    max-width:1400px ;
+    margin: 0 auto;
+   
+}
+.contenus{
+    width: 100%;
+    
+}
+.banniere{
+    width: 100%;
+    height: 150vh;
+    border: 3px solid rgb(246, 255, 0);
+    background-image: url(../../image/thor-karanlik-dunya-altyazili-fragman-5227911_7033_amp.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.img{display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
  
+  }
 
-
-.p{
+.text{position: relative;
+    top: -60rem;
+    margin-left:8rem;
+    
+}
+.text p{
+    font-size: 30px;
     color: #fff;
-    font-size: 25px;
-    font-family: 'Inter', sans-serif;
-    margin-left: 80px;
+    font-family: 'Inter', sans-serif;;
+}
+
+.annonces h1{
+    color: aqua;
+}
+.annonces{
+   position: relative;
+  margin-top:-33rem;
+  display: grid;
+  grid-template-columns: 100%;
+}
+.nouveauté{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1400px;
+    border: 1px solid green;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    gap: 10px;
     
 }
 
-.animes{
-    position: relative;
-    border: 1px solid red;
-    display: grid;
-    top: 8rem;
-    grid-gap: 1rem;
-    grid-template-columns: 100%;
-}
-
-.galerie-animes{
-    background: black;
-}
-.categories{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 100%;
-    max-width: 1700px;
-    margin: 20px  auto;
-    border: 1px solid  green;
-}
-
-.ligne{
-    width: 350px;
-    margin: 10px;
-    /* height: 250px; */
-    background-color: blue;
-    overflow: hidden;
-    flex-shrink: 0; 
-}
-
-.ligne img{
-    width: 100%;
+ .nouveauté .nouv{
+    width: 300px;
     height: 400px;
-    transition: transform 0.25;  
+   flex-shrink: 0;
+    margin: 10px;
+    
 }
-.ligne img:hover{
-transform: scale(1.24);
-}
-
-.description p{
-    text-align: center;
-    color: #d9d9d9;
-    font-family: 'Inter', sans-serif;
+ .nouv img{
+    transition: transform 0,25 ;
 }
 
-/* fin section film */
+.nouv img:hover{
+    transform: scale(-1);
+}
 
-/* debut footer */
-  
+.nouv img{
+    width: 300px;
+    height: 400px;
+}
+
+/* début du footer de la page */
+
+
 footer{
     
     position: relative;
     top: 8rem;
     width: 100%;
     margin: 0 auto;
+    background: rgb(46, 45, 45);
+    border-top: 1px solid #d9d9d9;
+    padding: 5px 15px;
    
     
 }
 .footer{
-    border: 2px solid rgb(255, 0, 204);
+   
     display: flex;
     justify-content: center; 
+    align-items: center;
     flex-wrap: wrap;
-    max-width: 80%;
+    max-width: 55rem;
+    margin: 0 auto;
+    margin-top: 20px;
 }
 
 .navigation{
-    border:4px solid rgb(241, 255, 47); 
+    
     margin-right: 20rem;
 }
 .navigation p{
@@ -220,21 +235,38 @@ footer{
 text-decoration: none;
 color: rgba(225, 225, 225, 0.63);
 }
-.adresses{
-   
+.adresses p{
+   font-size: 18px;
+   font-family:'Inter', sans-serif ;
+   text-align: center;
+   text-decoration:underline;
+   color: rgba(225, 225, 225, 0.63);
 }
-.adrs{
-    margin-top: 20px;
-   
+span{
+    margin-left:10px;
+    margin-top: 8px;
+    color: rgba(225, 225, 225, 0.63);
+}
+.sociaux{
+    margin-top: 50px;   
+}
+.sociaux p{
+    text-align: center;
+    margin-top: 10px;
+    color: rgba(225, 225, 225, 0.63);
+    font-family:'Inter', sans-serif ;
+}
+.soc{
+    display: inline;
+    margin-left: 20px;
 }
 
 .adresse{
-      width: 30px;
-      height: 30px;
-      border-radius: 80px;
-      background: pink;
       margin-top: 10px;
-      display: flex;
-      justify-content: center;
+      display: flex;   
 }
+
+
+
+
 
