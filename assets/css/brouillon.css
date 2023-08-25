@@ -3,13 +3,12 @@
 body{margin: 0 ;
     padding: 0;
     margin: 0 auto;
- 
+    background: rgb(47, 82, 98);
 }
 
 *{
     padding: 0;
     margin: 0;
-   
 }
 
 .nav{
@@ -18,50 +17,67 @@ body{margin: 0 ;
 
 /* barre de navigation */
 nav{
-    background:blue;
+    background:black;
    display: flex;
    width: 100%;
    position: fixed; 
    justify-content: space-between;
    align-items: center;
    height: 80px;
-   z-index: 1;
+   z-index: 1;  
+}
+ input{
+    width: 220px;
+    padding: 8px;
+    border-radius: 10px;
+    outline: none;
+    background: #353434;
+    color: white;
+    border: none;
+ }
 
+nav p{ 
    
 }
-nav p{ 
-    color: orange;
-    font-size: 30px;
-    font-family: 'Jacques Francois Shadow', cursive;
-}
-
-
 
  nav .onglets ul li{
     display: inline-block;
     color: rgba(255, 255, 255, 0.76);
-    margin:0 10px;
+    margin:0 20px;
     line-height: 80px;
     
     }
-    .onglets nav ul{
+    .onglets ul{
         margin-right: 60px;
     }
 
     ul li #a{
-        font-size: 18px;
-       
+        font-size: 20px;
      }
      
-    #a{
+    a{
         text-decoration: none;
         color: white;
     }
     
-     a:hover{
+     #a:hover{
         color: rgba(255, 255, 255, 0.76);
     }
 
+    button{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         background: orange;
+         padding:10px;
+         margin-left:10px ;
+         width: 120px;
+         border: none;
+         border-radius: 5px;
+    }
+    button:hover{
+        scale: 1.05;
+     }
 
 .logo img{
     display: none;
@@ -71,8 +87,6 @@ nav p{
 #check{
     display:none ;
 }
-
-
 
 /* responsivité */
 
@@ -84,20 +98,26 @@ nav p{
  
    .onglets ul  { position: fixed;
         width: 100%;
-       background: rgb(217, 126, 14);
-        height: 100vh;
-        top: 80px;
+       backdrop-filter:blur(3px) ;
+        height: 60vh;
+        top: 70px;
         text-align: right;
         left: 100%;
         transition: all .5s ; 
+
     }
     nav .onglets ul li{
         display: block;
-        
+        margin-right: 40px;
+        margin-top: -20px; 
     }
 
+     button{
+        margin-left: 23rem;
+     }
     #check:checked ~ ul{
         left: 0;
+        margin-top: 10px;
        
     }
 }
@@ -122,10 +142,10 @@ section{
 .banniere{
     width: 100%;
     height: 150vh;
-    border: 3px solid rgb(246, 255, 0);
     background-image: url(../../image/thor-karanlik-dunya-altyazili-fragman-5227911_7033_amp.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 .img{display: flex;
@@ -161,11 +181,9 @@ section{
     align-items: center;
     width: 100%;
     max-width: 1400px;
-    border: 1px solid green;
     flex-wrap: wrap;
     margin: 0 auto;
-    gap: 10px;
-    
+    gap: 10px;   
 }
 
  .nouveauté .nouv{
@@ -197,7 +215,7 @@ footer{
     top: 8rem;
     width: 100%;
     margin: 0 auto;
-    background: rgb(46, 45, 45);
+    background: black;
     border-top: 1px solid #d9d9d9;
     padding: 5px 15px;
    
