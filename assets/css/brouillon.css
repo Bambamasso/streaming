@@ -26,19 +26,6 @@ nav{
    height: 80px;
    z-index: 1;  
 }
- input{
-    width: 220px;
-    padding: 8px;
-    border-radius: 10px;
-    outline: none;
-    background: #353434;
-    color: white;
-    border: none;
- }
-
-nav p{ 
-   
-}
 
  nav .onglets ul li{
     display: inline-block;
@@ -113,7 +100,7 @@ nav p{
     }
 
      button{
-        margin-left: 23rem;
+       float: right;
      }
     #check:checked ~ ul{
         left: 0;
