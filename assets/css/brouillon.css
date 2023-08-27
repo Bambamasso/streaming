@@ -142,8 +142,7 @@ section{
  
   }
 
-.text{position: relative;
-    top: -60rem;
+.text{
     margin-left:8rem;
     
 }
@@ -157,8 +156,8 @@ section{
     color: aqua;
 }
 .annonces{
-   position: relative;
-  margin-top:-33rem;
+  
+  margin-top:80px;
   display: grid;
   grid-template-columns: 100%;
 }
@@ -197,7 +196,7 @@ section{
 
 
 footer{
-    
+    padding: 0 50px;
     position: relative;
     top: 8rem;
     width: 100%;
@@ -271,6 +270,33 @@ span{
       display: flex;   
 }
 
+@media screen and (max-width:805px){
+    .footer{display: flex;
+        flex-wrap:nowrap;
+        margin: 0 auto;
+        margin-top: 20px;
+        
+    }
+    .navigation{
+        margin-right: 0;
+    }
+
+   .nav-footer ul li{
+    display: block;
+    border-right: none;
+    margin-left: 0;
+   }
+   .adresses{
+   margin-left: 80px;
+   } 
+
+   .sociaux{position: absolute;
+   margin-top: 250px;
+   margin-left: -20px;
+   padding-bottom: 20px;
+   }
+}
+    
 
 
 

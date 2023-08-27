@@ -16,11 +16,10 @@ p{
 .connexion{
     background: white;
   margin: 0 auto;
-  border: 1px solid #c07503;
   width: 400px;
   height: 350px;
   margin-top: 150px;
-  box-shadow: 2px 2px 2px 2px;
+  box-shadow: 2px 2px 2px 2px white;
 
 }
 .élements{
@@ -30,7 +29,7 @@ p{
 }
 input{
    width: 250px;
-   height: 30px;
+  padding: 10px;
    margin-bottom: 10px;
    outline: none;
 }
@@ -67,4 +66,9 @@ button a:hover{color: white;}
 
 .inscrire a{
     text-decoration: none;
+}
+
+.conexion img:hover{
+transition: 0.5s;
+    transform: scale(1.5);
 }
