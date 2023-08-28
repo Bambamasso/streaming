@@ -4,6 +4,7 @@ body{margin: 0 ;
     padding: 0;
     margin: 0 auto;
     background: rgb(47, 82, 98);
+    overflow-x: hidden;
 }
 
 *{
@@ -35,11 +36,11 @@ nav{
     
     }
     .onglets ul{
-        margin-right: 60px;
+        margin-right: 0px;
     }
 
     ul li #a{
-        font-size: 20px;
+        font-size: 25px;
      }
      
     a{
@@ -128,11 +129,15 @@ section{
 }
 .banniere{
     width: 100%;
-    height: 150vh;
+    height: auto;
     background-image: url(../../image/thor-karanlik-dunya-altyazili-fragman-5227911_7033_amp.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+}
+.banniere marquee{
+
+
 }
 
 .img{display: flex;
@@ -143,13 +148,16 @@ section{
   }
 
 .text{
+    position: relative;
+    top: 500px;
     margin-left:8rem;
+
     
 }
 .text p{
     font-size: 30px;
     color: #fff;
-    font-family: 'Inter', sans-serif;;
+    font-family: 'Inter', sans-serif;
 }
 
 .annonces h1{
@@ -157,7 +165,7 @@ section{
 }
 .annonces{
   
-  margin-top:80px;
+  margin-top:950px;
   display: grid;
   grid-template-columns: 100%;
 }
@@ -173,9 +181,9 @@ section{
 }
 
  .nouveauté .nouv{
+    border:1px solid  #ffffff;
     width: 300px;
     height: 400px;
-   flex-shrink: 0;
     margin: 10px;
     
 }
@@ -184,12 +192,45 @@ section{
 }
 
 .nouv img:hover{
-    transform: scale(-1);
+   
 }
 
 .nouv img{
     width: 300px;
     height: 400px;
+}
+/* debut responsivité */
+
+@media screen and (max-width:1460px){
+
+
+    .annonces{
+  
+        margin-top:400px;
+        display: grid;
+        grid-template-columns: 100%;
+      }
+   
+    .nouveauté{border:1px solid #c07503;
+       width: 100%;
+        max-width: 60%;
+        gap:0px 
+    }
+
+
+    .nouv img{
+       width: 200px;
+       height: 300px;
+    }
+
+    .nouveauté .nouv{
+        border:1px solid  #ffffff;
+        width: 200px;
+        height: 300px;
+        margin: 10px;
+        
+    }
+
 }
 
 /* début du footer de la page */
@@ -197,25 +238,25 @@ section{
 
 footer{
     padding: 0 50px;
-    position: relative;
-    top: 8rem;
+    position: relative ;
+    /* top: 8rem; */
     width: 100%;
     margin: 0 auto;
     background: black;
     border-top: 1px solid #d9d9d9;
-    padding: 5px 15px;
+    padding:50px 60px;
    
     
 }
 .footer{
-   
+   border: 1px solid red;
     display: flex;
     justify-content: center; 
     align-items: center;
     flex-wrap: wrap;
     max-width: 55rem;
     margin: 0 auto;
-    margin-top: 20px;
+
 }
 
 .navigation{
@@ -231,7 +272,7 @@ footer{
   margin-top: 8px;
 }
 .nav-footer ul li{
- display: inline;
+ /* display: inline; */
  margin-left: 2rem;
  border-right: 1px solid ;
 }
@@ -282,7 +323,7 @@ span{
     }
 
    .nav-footer ul li{
-    display: block;
+    /* display: block; */
     border-right: none;
     margin-left: 0;
    }
