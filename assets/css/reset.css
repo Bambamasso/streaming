@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Lato&family=Quicksand:wght@400;500&display=swap');
+
+body {
+   margin: 0 auto;
+   background-color: black;
+
+
+}
+p{
+    text-align: center;
+    font-size: 30px;
+    color: #c07503;
+    font-family:'Inter', sans-serif;
+}
+
+.connexion{
+    background: white;
+  margin: 0 auto;
+  width: 400px;
+  height: 400px;
+  margin-top: 150px;
+  box-shadow: 2px 2px 2px 2px white;
+
+}
+.élements{
+    display: flex;
+    justify-content: center;
+   text-align: center;
+}
+
+input{
+   width: 250px;
+  padding: 10px;
+   margin-bottom: 10px;
+   outline: none;
+   
+}
+
+.conexion{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+
+}
+button{
+    width: 250px;
+    padding: 8px;
+    background: #c07503;
+    border: none;
+    border-radius: 20px;
+    margin-top: 10px;
+    box-shadow: 1px 1px 1px 1px ;
+}
+
+button:hover{
+    scale: 1.05;
+    transition: 0.3s;
+}
+button a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.65);
+}
+button a:hover{color: white;}
+
+.inscrire a{
+    text-decoration: none;
+}
+
+.conexion img:hover{
+transition: 0.5s;
+    transform: scale(1.5);
+}
