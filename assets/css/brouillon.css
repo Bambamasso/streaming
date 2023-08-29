@@ -3,7 +3,6 @@
 body{margin: 0 ;
     padding: 0;
     margin: 0 auto;
-    background: rgb(47, 82, 98);
     overflow-x: hidden;
 }
 
@@ -36,7 +35,7 @@ nav{
     
     }
     .onglets ul{
-        margin-right: 0px;
+        margin-right: 25px;
     }
 
     ul li #a{
@@ -56,12 +55,16 @@ nav{
          display: flex;
          justify-content: center;
          align-items: center;
-         background: orange;
+         background: #c07503;
          padding:10px;
          margin-left:10px ;
          width: 120px;
          border: none;
          border-radius: 5px;
+    }
+
+    .deconect{color: rgba(255, 255, 255, 0.56);
+        font-family:'Inter', sans-serif;
     }
     button:hover{
         scale: 1.05;
@@ -118,81 +121,64 @@ nav{
 section{
     position: relative;
     top: 4rem;
-    width: 90%;
-    max-width:1400px ;
-    margin: 0 auto;
-   
-}
-.contenus{
     width: 100%;
-    
+    max-width: 100%;
+    background-color: aquamarine;
 }
+
 .banniere{
-    width: 100%;
+    
     height: auto;
     background-image: url(../../image/thor-karanlik-dunya-altyazili-fragman-5227911_7033_amp.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    max-width:100% ;
+    margin: 0 auto;
 }
-.banniere marquee{
-
-
-}
-
-.img{display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
- 
-  }
 
 .text{
     position: relative;
-    top: 500px;
+    top: 400px;
     margin-left:8rem;
 
     
 }
 .text p{
-    font-size: 30px;
+    font-size: 36px;
     color: #fff;
     font-family: 'Inter', sans-serif;
 }
 
 .annonces h1{
+    position: relative;
     color: aqua;
+   bottom: 180px;
+   left: 250px;
+
 }
 .annonces{
-  
-  margin-top:950px;
-  display: grid;
-  grid-template-columns: 100%;
+  margin-top:900px;
 }
-.nouveauté{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    max-width: 1400px;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    gap: 10px;   
+.nouveauté{position: relative;
+    bottom: 180px;
+    text-align: center;
+
 }
 
  .nouveauté .nouv{
-    border:1px solid  #ffffff;
+    display: inline-block;
+    margin-right: 20px;
     width: 300px;
     height: 400px;
-    margin: 10px;
-    
+      
 }
- .nouv img{
-    transition: transform 0,25 ;
+ .nouv {
+    transition: transform 0.25;
 }
 
 .nouv img:hover{
-   
+   transform: scale(1.02);
 }
 
 .nouv img{
@@ -200,67 +186,50 @@ section{
     height: 400px;
 }
 /* debut responsivité */
-
-@media screen and (max-width:1460px){
-
-
-    .annonces{
-  
-        margin-top:400px;
-        display: grid;
-        grid-template-columns: 100%;
-      }
-   
-    .nouveauté{border:1px solid #c07503;
-       width: 100%;
-        max-width: 60%;
-        gap:0px 
-    }
-
-
-    .nouv img{
-       width: 200px;
-       height: 300px;
-    }
-
+@media ( max-width:800px){
+      
     .nouveauté .nouv{
-        border:1px solid  #ffffff;
+        display: inline-block;
+        margin-right: 20px;
         width: 200px;
         height: 300px;
-        margin: 10px;
-        
+          
+    }
+    .nouv img{
+        width: 200px;
+        height: 300px;
     }
 
+
+    
 }
+
 
 /* début du footer de la page */
 
 
 footer{
-    padding: 0 50px;
-    position: relative ;
-    /* top: 8rem; */
+    position: relative;
     width: 100%;
     margin: 0 auto;
     background: black;
     border-top: 1px solid #d9d9d9;
-    padding:50px 60px;
+    padding: 5px 15px;
    
     
 }
 .footer{
-   border: 1px solid red;
+   
     display: flex;
     justify-content: center; 
     align-items: center;
     flex-wrap: wrap;
     max-width: 55rem;
     margin: 0 auto;
-
+    margin-top: 20px;
 }
 
 .navigation{
-    
     margin-right: 20rem;
 }
 .navigation p{
@@ -268,20 +237,21 @@ footer{
   font-size: 25px;
   font-family: 'Jacques Francois Shadow', cursive;
   color: #c07503;
-  padding-bottom: 2rem;
-  margin-top: 8px;
+  padding-bottom: 1rem;
+  
 }
 .nav-footer ul li{
- /* display: inline; */
+ display: inline;
  margin-left: 2rem;
- border-right: 1px solid ;
 }
 .nav-footer ul li a{
 text-decoration: none;
 color: rgba(225, 225, 225, 0.63);
+font-size: 20px;
+font-family:'Inter', sans-serif ;
 }
 .adresses p{
-   font-size: 18px;
+   font-size: 20px;
    font-family:'Inter', sans-serif ;
    text-align: center;
    text-decoration:underline;
@@ -296,22 +266,25 @@ span{
     margin-top: 50px;   
 }
 .sociaux p{
+    font-size: 20px;
     text-align: center;
-    margin-top: 10px;
+    margin-bottom: 10px;
+    text-decoration: underline;
     color: rgba(225, 225, 225, 0.63);
     font-family:'Inter', sans-serif ;
 }
-.soc{
+.soc{align-items: center;
     display: inline;
-    margin-left: 20px;
+    margin-left: 25px;
 }
 
 .adresse{
       margin-top: 10px;
-      display: flex;   
+      display: flex;
+      justify-content: center;   
 }
 
-@media screen and (max-width:805px){
+@media screen and (max-width:868px){
     .footer{display: flex;
         flex-wrap:nowrap;
         margin: 0 auto;
@@ -323,7 +296,7 @@ span{
     }
 
    .nav-footer ul li{
-    /* display: block; */
+    display: block;
     border-right: none;
     margin-left: 0;
    }
@@ -338,7 +311,3 @@ span{
    }
 }
     
-
-
-
-
