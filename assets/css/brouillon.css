@@ -123,25 +123,13 @@ section{
   
 }
 
-/* .banniere{
-    width: 100%;
-    height: 800px;
-    background: url(../../image/thor-karanlik-dunya-altyazili-fragman-5227911_7033_amp.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
- .banniere.p{
-    position: absolute;
-    top: -500px;
- 
-} */
+
 
 
 .banniere{
     width: 100%;
     height: auto;
-    background-image: url(../../image/thor-karanlik-dunya-altyazili-fragman-5227911_7033_amp.jpg);
+    background-image: url(../../image/thor-le-monde-des-tenebres-affiche-1020416.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;  
@@ -164,7 +152,7 @@ section{
     position: relative;
     color: aqua;
    bottom: 180px;
-   left: 20px;
+   left: 50px;
 
 }
 .annonces{
@@ -179,8 +167,8 @@ section{
  .nouveauté .nouv{
     display: inline-block;
     margin-right: 20px;
-    width: 300px;
-    height: 400px;
+    width: 400px;
+    height: 500px;
       
 }
  .nouv {
@@ -192,122 +180,246 @@ section{
 }
 
 .nouv img{
-    width: 300px;
-    height: 400px;
+    width: 400px;
+    height: 500px;
 }
 
-/* debut responsivité */
-/* @media ( max-width:1296px){
-      
-    .nouveauté .nouv{
+
+/* responsivité */
+
+@media ( max-width:1692px){
+
+     .nouveauté .nouv{
         display: inline-block;
-        margin-right: 10px;
-        width: 280px;
-        height: 300px;
-          
+        margin-right: 20px;
+        width: 360px;
+        height: 500px;   
     }
+     .nouv {
+        transition: transform 0.25;
+    }
+    
+    .nouv img:hover{
+       transform: scale(1.02);
+    }
+    
     .nouv img{
-        width: 280px;
-        height: 300px;
+        width: 360px;
+        height: 500px;
     }
-    .annonces h1{
-        position: relative;
-        color: aqua;
-       bottom: 180px;
-       left: 50px;
-    }
+}
+
+@media ( max-width:1533px){
+
+    .nouveauté .nouv{
+       display: inline-block;
+       margin-right: 20px;
+       width: 320px;
+       height: 500px;   
+   }
+    .nouv {
+       transition: transform 0.25;
+   }
+   
+   .nouv img:hover{
+      transform: scale(1.02);
+   }
+   
+   .nouv img{
+       width: 320px;
+       height: 500px;
+   }
+}
+
+
+@media ( max-width:1373px){
+
+    .nouveauté .nouv{
+       display: inline-block;
+       margin-right: 20px;
+       width: 280px;
+       height: 400px;   
+   }
+    .nouv {
+       transition: transform 0.25;
+   }
+   
+   .nouv img:hover{
+      transform: scale(1.02);
+   }
+   
+   .nouv img{
+       width: 280px;
+       height: 400px;
+   }
+}
+
+@media ( max-width:1213px){
+
+    .nouveauté .nouv{
+       display: inline-block;
+       margin-right: 20px;
+       width: 240px;
+       height: 400px;   
+   }
+    .nouv {
+       transition: transform 0.25;
+   }
+   
+   .nouv img:hover{
+      transform: scale(1.02);
+   }
+   
+   .nouv img{
+       width: 240px;
+       height: 400px;
+   }
+}
+
+@media ( max-width:1052px){
 
     .text p{
         font-size: 25px;
-        color: #fff;
-      font-family: 'Inter', sans-serif;
     }
+
+    .nouveauté .nouv{
+       display: inline-block;
+       margin-right: 20px;
+       width: 200px;
+       height: 300px;   
+   }
+    .nouv {
+       transition: transform 0.25;
+   }
    
-}
-
-@media ( max-width:1175px){
-      
-    .nouveauté .nouv{
-        display: inline-block;
-        margin-right: 15px;
-        width: 230px;
-        height: 300px;
-          
-    }
-    .nouv img{
-        width: 230px;
-        height:300px;
-    }
-    .annonces h1{
-        position: relative;
-        color: aqua;
-       bottom: 180px;
-       left: 50px;
-    }
-
-    .text p{
-        font-size: 20px;
-        color: #fff;
-      font-family: 'Inter', sans-serif;
-    }
-}
-
-@media ( max-width:995px){
-      
-    .nouveauté .nouv{
-        display: inline-block;
-        margin-right: 15px;
-        width: 180px;
-        height: 250px;
-          
-    }
-    .nouv img{
-        width: 180px;
-        height: 250px;
-    }
-    .annonces h1{
-        position: relative;
-        color: aqua;
-       bottom: 180px;
-       left: 50px;
-    }
-
-    .text p{
-        font-size: 20px;
-        color: #fff;
-      font-family: 'Inter', sans-serif;
-    }
+   .nouv img:hover{
+      transform: scale(1.02);
+   }
    
+   .nouv img{
+       width: 200px;
+       height: 300px;
+   }
 }
 
-@media ( max-width:801px){
-      
-    .nouveauté .nouv{
-        display: inline-block;
-        margin-right: 20px;
-        width: 130px;
-        height: 300px;
-          
-    }
-    .nouv img{
-        width: 130px;
-        height: 200px;
-    }
-    .annonces h1{
-        position: relative;
-        color: aqua;
-       bottom: 180px;
-       left: 50px;
-    }
+@media ( max-width:892px){
 
     .text p{
         font-size: 18px;
-        color: #fff;
-      font-family: 'Inter', sans-serif;
     }
+    .nouveauté .nouv{
+       display: inline-block;
+       margin-right: 15px;
+       width: 160px;
+       height: 200px;   
+   }
+    .nouv {
+       transition: transform 0.25;
+   }
    
+   .nouv img:hover{
+      transform: scale(1.02);
+   }
+   
+   .nouv img{
+       width: 160px;
+       height: 200px;
+   }
 }
- */
+
+@media ( max-width:711px){
+
+    .text p{
+        font-size: 16px;
+    }
+    .nouveauté .nouv{
+       display: inline-block;
+       margin-right: 15px;
+       width: 120px;
+       height: 200px;   
+   }
+    .nouv {
+       transition: transform 0.25;
+   }
+   
+   .nouv img:hover{
+      transform: scale(1.02);
+   }
+   
+   .nouv img{
+       width: 120px;
+       height: 200px;
+   }
+}
+
+
+@media ( max-width:552px){
+
+    .text p{
+        margin-left: 0px;
+        font-size: 10px;
+    }
+
+    .nouveauté .nouv{
+       display: inline-block;
+       margin-right: 15px;
+       width: 80px;
+       height: 100px;   
+   }
+    .nouv {
+       transition: transform 0.25;
+   }
+   
+   .nouv img:hover{
+      transform: scale(1.02);
+   }
+   
+   .nouv img{
+       width: 80px;
+       height: 100px;
+   }
+}
+
+@media ( max-width:392px){
+    section{
+        width: 100%;
+        background-color: aquamarine;
+        overflow-x: hidden;
+        }
+
+        .banniere{
+            width: 100%;
+        }
+
+    .text {
+        position: relative;
+    top: 400px;
+    margin-left:2rem;
+    }
+
+    .nouveauté .nouv{
+       display: inline-block;
+       margin-right: 15px;
+       width: 60px;
+       height: 100px;   
+   }
+    .nouv {
+       transition: transform 0.25;
+   }
+   
+   .nouv img:hover{
+      transform: scale(1.02);
+   }
+   
+   .nouv img{
+       width: 60px;
+       height: 100px;
+   }
+
+  
+}
+
+    /* fin de la responsivité */
 
 
 

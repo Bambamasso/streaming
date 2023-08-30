@@ -4,10 +4,11 @@ body{margin: 0 ;
     padding: 0;
     margin: 0 auto;
     background: black;
+    overflow-x: hidden;
  
 }
 
-*{
+*{box-sizing: border-box;
     padding: 0;
     margin: 0;
    
@@ -197,6 +198,28 @@ transform: scale(1.24);
     font-family: 'Inter', sans-serif;
 }
 
+@media ( max-width:442px){
+    input{
+        width: 100px;
+        padding: 8px;
+        border-radius: 10px;
+        outline: none;
+        background: #353434;
+        color: white;
+        border: none;
+     }
+
+     .p{
+        color: #fff;
+        font-size: 25px;
+        font-family: 'Inter', sans-serif;
+        margin-left: 50px;
+
+        }
+}
+
+
+
 /* fin section film */
 
 /* debut footer */
@@ -213,7 +236,7 @@ footer{
     
 }
 .footer{
-   
+   width: 100%;
     display: flex;
     justify-content: center; 
     align-items: center;
