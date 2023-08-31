@@ -209,7 +209,7 @@ section{
 }
 
 .nouv img:hover{
-   transform: scale(1.1);
+   transform: scale(1.24);
 }
 
 .nouv img{
@@ -457,7 +457,6 @@ section{
       height: 100px;
   }
 
- 
 }
 
    /* fin de la responsivité */
@@ -467,15 +466,13 @@ section{
 
 footer{
     position: relative;
-    /* top: 15rem; */
     width: 100%;
     margin: 0 auto;
     background: black;
     border-top: 1px solid #d9d9d9;
-    padding:  20px;   
+    padding:  5px 15px;   
 }
 .footer{
-   
     display: flex;
     justify-content: center; 
     align-items: center;

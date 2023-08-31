@@ -176,15 +176,17 @@ section{
  .nouv {
     transition: transform 0.25;
 }
+
+.nouv img:hover{
+    transform: scale(1.24);
+ }
 .description{
     color:#d9d9d9;
     font-family: 'Inter', sans-serif;
     background: #c07503;
 }
 
-.nouv img:hover{
-   transform: scale(1.1);
-}
+
 
 .nouv img{
     width: 400px;
@@ -445,7 +447,7 @@ footer{
     margin: 0 auto;
     background: black;
     border-top: 1px solid #d9d9d9;
-    padding:  20px;   
+    padding:  5px 15px;   
 }
 .footer{
    

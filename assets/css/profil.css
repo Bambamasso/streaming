@@ -8,8 +8,8 @@ body{
 .connexion{
    border-radius: 20px;
     background: white;
-    width: 390px;
-    height: 250px;
+    width: 400px;
+    height: 260px;
     margin: 0 auto;
     margin-top: 200px;
     box-shadow: 2px 2px 2px 2px white;
@@ -29,8 +29,8 @@ body{
   margin-left: 10px;  
 }
 .élements{
-    margin-top: px;
    margin-left: 25px;
+   margin-top: -10px;
 }
 
 h1{position: relative;
@@ -44,9 +44,11 @@ h1{position: relative;
 label{
     font-size: 18px;
     font-family: 'Inter', sans-serif;
+
 }
 
 span{margin-left: 10px;
+   
     font-size: 14px;
     font-family: 'Inter', sans-serif;
     opacity: 0.8;
