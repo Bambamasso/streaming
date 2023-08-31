@@ -33,9 +33,9 @@ nav{
     border: none;
  }
 
-nav p{ 
+/* nav p{ 
     margin-left: 50px;
-}
+} */
 
  nav .onglets ul li{
     display: inline-block;
