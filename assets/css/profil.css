@@ -21,30 +21,34 @@ body{
 }
 
 .droit{
-margin-top: 25px;
+
      
 }
-.titre{
+.titre{position: relative;
+    top: -40px;
   margin-left: 10px;  
 }
 .élements{
-    margin-top: 25px;
+    margin-top: px;
    margin-left: 25px;
 }
 
-.user{
-   text-align:center ; 
-   font-size: 20px;
-   margin-top: 10px;
-   color: #c07503;
-}
-h1{color: #c07503;
+h1{position: relative;
+    top: -30px;
+    color: #c07503;
     text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 35px;
+    text-decoration: underline;
 }
 label{
     font-size: 18px;
+    font-family: 'Inter', sans-serif;
 }
 
 span{margin-left: 10px;
     font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    opacity: 0.8;
+   
 }

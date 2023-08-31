@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Lato&family=Quicksand:wght@400;500&display=swap');
 body{margin: 0 ;
     padding: 0;
-    background-color:#f1f1f1 ;
     overflow-x: hidden;
 }
 
@@ -35,7 +34,7 @@ nav{
  }
 
 nav p{ 
-   
+    margin-left: 50px;
 }
 
  nav .onglets ul li{
@@ -107,62 +106,28 @@ nav p{
 
 /* responsivité */
 
-@media  (max-width:603px){
-
-   ul{
-    display: flex; }
-    
-
-    .button-connexion{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: orange;
-        padding:8px;
-        margin-left:10px ;
-        width: 100px;
-        border: none;
-        border-radius: 5px;
-   }
-   .button-connexion:hover{
-       scale: 1.05;
-    }
-
-    .button-inscription{
-       display: flex;
-        justify-content: center;
-        align-items: center;
-        background: white;
-        padding:8px;
-        margin-left:10px ;
-        width: 100px;
-        border: none;
-        border-radius: 5px;
-    }
-
-
-  
-
-   
-    /* .logo img{
+@media screen and (max-width:620px){
+    .logo img{
         display: block;
     }
  
    .onglets ul  { position: fixed;
         width: 100%;
        backdrop-filter:blur(3px) ;
-        height: 60vh;
-        top: 70px;
+        height: 20vh;
+        top: 90px;
         text-align: right;
         left: 100%;
         transition: all .5s ;
     }
 
     nav .onglets ul li{
-        display: block;
         margin-right: 40px;
         margin-top: -20px; 
     }
+     .button-inscription{
+        margin-top: 30px;
+     }
 
     #check:checked ~ ul{
         left: 0;
@@ -171,7 +136,7 @@ nav p{
 
     button{
         float: right;   
-    } */
+    }
     
 }
 
@@ -195,8 +160,8 @@ section{
 
 .text{
     position: relative;
-    top: 400px;
-    margin-left:8rem;
+    top: 500px;
+    text-align: center;
 
     
 }
@@ -209,9 +174,10 @@ section{
 .annonces h1{
     position: relative;
     color: aqua;
-   bottom: 180px;
-   left: 20px;
-
+   bottom: 200px;
+   left: 60px;
+   font-family: 'Inter', sans-serif;
+   color: white;
 }
 .annonces{
   margin-top:900px;
@@ -225,21 +191,26 @@ section{
  .nouveauté .nouv{
     display: inline-block;
     margin-right: 20px;
-    width: 400px;
-    height: 500px;
+    width: 100%px;
+    height: 400px;
       
+}
+.description{
+    color: #fff;
+    background: #c07503;
+    font-family: 'Inter', sans-serif;
 }
  .nouv {
     transition: transform 0.25;
 }
 
 .nouv img:hover{
-   transform: scale(1.02);
+   transform: scale(1.24);
 }
 
 .nouv img{
-    width: 400px;
-    height: 500px;
+    width: 100%;
+    height: 400px;
 }
 
 /* responsivité */
@@ -445,7 +416,8 @@ section{
        }
 
        .banniere{
-           width: 100%;
+           max-width: 100%;
+
        }
 
    .text {
@@ -477,14 +449,7 @@ section{
 }
 
    /* fin de la responsivité */
-
-
-
- 
-
-
 /* début du footer de la page */
-
 
 /* debut footer */
 
@@ -495,7 +460,7 @@ footer{
     margin: 0 auto;
     background: black;
     border-top: 1px solid #d9d9d9;
-    padding:  50px;   
+    padding:  20px;   
 }
 .footer{
    
@@ -538,7 +503,7 @@ footer{
    color: rgba(225, 225, 225, 0.63);
 }
 span{
-    margin-left:10px;
+    margin-left:15px;
     margin-top: 8px;
     color: rgba(225, 225, 225, 0.63);
 }
@@ -563,7 +528,7 @@ span{
       justify-content: center;  
 }
 
-@media screen and (max-width:868px){
+@media screen and (max-width:960px){
 
     footer{
         padding: 100px;
@@ -590,9 +555,9 @@ span{
    } 
 
    .sociaux{position: absolute;
-   margin-top: 250px;
+   margin-top: 300px;
    margin-left: -20px;
-   padding-bottom: 20px;
+   padding-bottom: 30px;
    }
 }
     
