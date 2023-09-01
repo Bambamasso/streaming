@@ -33,9 +33,9 @@ nav{
     border: none;
  }
 
-/* nav p{ 
-    margin-left: 50px;
-} */
+nav p{ 
+    margin-left: 20px;
+}
 
  nav .onglets ul li{
     display: inline-block;
@@ -45,7 +45,7 @@ nav{
     
     }
     .onglets ul{
-        margin-right: 60px;
+        margin-right: 40px;
     }
 
     ul li #a{
@@ -232,7 +232,7 @@ section{
    }
    
    .nouv img:hover{
-      transform: scale(1.02);
+      transform: scale(1.24);
    }
    
    .nouv img{

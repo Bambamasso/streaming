@@ -36,10 +36,10 @@ input{
     border: none;
  }
 
-/* nav p{ 
+nav p{ 
     color: #c07503;
-    margin-left: 50px;
-} */
+    margin-left: 20px;
+}
 
  nav .onglets ul li{
     display: inline-block;
@@ -49,7 +49,7 @@ input{
     
     }
     .onglets ul{
-        margin-right: 80px;
+        margin-right: 40px;
     }
 
     ul li #a{
@@ -72,7 +72,7 @@ input{
          align-items: center;
          background: #c07503;
          padding:10px;
-         margin-left:10px ;
+         /* margin-left:10px ; */
          width: 120px;
          border: none;
          border-radius: 5px;

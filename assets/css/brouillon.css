@@ -31,17 +31,17 @@ nav{
     
     }
     .onglets ul{
-        margin-right: 35px;
+        margin-right: 40px;
     }
 
     ul li #a{
         font-size: 25px;
      }
      
-     /* nav p{ 
-        margin-left: 50px;
+     nav p{ 
+        margin-left: 20px;
     }
-     */
+    
     a{
         text-decoration: none;
         color: white;
